@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("./public/assets/mandrakes-forest.jpg") no-repeat;
+    background-color: black;
+    object-fit: contain;
+}
+
+.inputs{
+position: absolute;
+right: 10%;
+top: 15%;
+background-color: transparent;
+display: flex;
+flex-direction: row;
+align-items: center;
+ gap:10px
+}
+.inputs > h2{
+    color: white;
+    font:bolder;
+}
+.inputs > div {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    justify-content : space-between;
+    color: white;
+    font-weight: bold;
+}
+@media screen and (max-width:640px){
+    .inputs{
+      right: 5%;
+      margin-left: 20px;
+    }
+}
+
+#mandrake{
+ display: none;
+}
+
+
+
+.main-container{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
